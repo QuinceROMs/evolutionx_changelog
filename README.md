@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.10.12
+----------
+- fixed crashing of android.hardware.nfc-service.nxp service
+- maximum AOD refresh rate set to 60Hz
+- bumped kernel BPF version override to 5.4.299
+- enabled comprehensive ART optimizations including VDEX and ODEX generation for all system components to improve first-boot performance and reduce application startup latency.
+
+
 2025.10.10
 ----------
 - defined pickup sensor type
