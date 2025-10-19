@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.10.19
+----------
+- fixed USB tethering
+- reverted several commits that caused frame drops during normal use and gameplay
+- a few minor fixes.
+
+
 2025.10.12
 ----------
 - fixed crashing of android.hardware.nfc-service.nxp service
