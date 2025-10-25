@@ -1,6 +1,15 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.10.25
+----------
+- disabled frame pacing (due to frame drops)
+- enabled ScrollOptimizer
+- enabled ART speed-profile during build
+- fixed more NFC denials
+- minor sepolicy fixes.
+
+
 2025.10.19
 ----------
 - fixed USB tethering
