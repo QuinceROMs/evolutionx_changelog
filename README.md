@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.10.30
+----------
+- init: restored I/O performance by setting both the group_idle and slice_idle parameters to 0
+- enabled Qualcomm TrueWireless Stereo.
+
+
 2025.10.25
 ----------
 - disabled frame pacing (due to frame drops)
