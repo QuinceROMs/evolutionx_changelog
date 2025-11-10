@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.11.10
+----------
+- livedisplay: Use PWM pulse for IAntiFlicker if available
+- sepolicy: Removed commonized ST NFC labels
+- interfaces: Added AIDL and HIDL IDisplayPanelFeature
+- many minor fixes.
+
+
 2025.10.30
 ----------
 - init: restored I/O performance by setting both the group_idle and slice_idle parameters to 0
