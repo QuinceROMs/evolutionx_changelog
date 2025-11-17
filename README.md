@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.11.17
+----------
+- fixed file transfer issue
+- many VINTF and sepolicy updates.
+
+
 2025.11.10
 ----------
 - livedisplay: Use PWM pulse for IAntiFlicker if available
