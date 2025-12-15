@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.12.15
+----------
+- first QPR1 build :)
+- KeyHandler and doze: applied Expressive theme and converted for M3E support
+- fstab: enabled FBE2 and fixed up for EROFS
+- updated CarrierConfig
+- take a snapshot in 16-bit pixel format to save memory
+- fixed screen recording lag
+- disabled EGL image tracking to reduce overhead.
+
 2025.11.17
 ----------
 - fixed file transfer issue
