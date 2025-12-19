@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.12.19
+----------
+- overlay: fixed charging infos on keyguard
+- CarrierConfigOverlay: enabled editable_enhanced_4g_lte_bool globally
+- disabled AOD wallpaper.
+
+
 2025.12.15
 ----------
 - first QPR1 build :)
@@ -10,6 +17,7 @@ Evolution X - device tree changelog
 - take a snapshot in 16-bit pixel format to save memory
 - fixed screen recording lag
 - disabled EGL image tracking to reduce overhead.
+
 
 2025.11.17
 ----------
