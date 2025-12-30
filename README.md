@@ -6,7 +6,7 @@ Evolution X - device tree changelog
 - added misc vintf and sepolicy updates
 - kernel compiled with Clang 21
 - removed Dialer overlay (call recording is now enabled by default).
--  
+
 
 2025.12.19
 ----------
