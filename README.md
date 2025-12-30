@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.12.30
+----------
+- added misc vintf and sepolicy updates
+- kernel compiled with Clang 21
+- removed Dialer overlay (call recording is now enabled by default).
+-  
+
 2025.12.19
 ----------
 - overlay: fixed charging infos on keyguard
