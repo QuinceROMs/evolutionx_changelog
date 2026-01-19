@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.01.19
+----------
+- first QPR2 build :)
+- added missing audio configs from OxygenOS 12.1 H.41
+- updated carrier list to LA.QSSI.16.0.r1-06700-qssi.0
+- enabled smooth fade effect on edges of scrolling text
+- match both UI and KeyHandler default values for alert slider
+- misc vintf and sepolicy fixes.
+
+
 2025.12.30
 ----------
 - added misc vintf and sepolicy updates
