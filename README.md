@@ -1,6 +1,15 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.01.22
+----------
+- updated kernel
+- updated clang to r563880c
+- added performance entries for low-latency H.264 decoder
+- increased the Video Quality bpp tuning parameter value for H.264 decoder
+- patched libdpps.so to load Qualcomm's libtinyxml2_1.so to prevent runtime crashes.
+
+
 2025.01.19
 ----------
 - first QPR2 build :)
