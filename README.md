@@ -7,10 +7,12 @@ Evolution X - device tree changelog
 - added missing TinyALSA library
 - patched audio libs to load libaudioroute-v34.so
 - set executable permissions and linked Dolby service against V33 libstagefright_foundation
-- added com.android.bluetooth context to seapp_contexts
 - updated Bluetooth blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 - switched Bluetooth Audio HIDL revision to 2.1
-- created standalone RRO for OplusDoze.
+- created standalone RRO for OplusDoze
+- bumped vendor.oplus.hardware.charger to V10
+- KeyHandler: Fixed alert slider scaling upon resolution changes
+- many sepolicy fixes.
 
 
 2025.01.22
