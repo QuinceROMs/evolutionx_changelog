@@ -1,6 +1,18 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.01.30
+----------
+- added missing libdpps library and patched to load qcom's libtinyxml2_1.so
+- added missing TinyALSA library
+- patched audio libs to load libaudioroute-v34.so
+- set executable permissions and linked Dolby service against V33 libstagefright_foundation
+- added com.android.bluetooth context to seapp_contexts
+- updated Bluetooth blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- switched Bluetooth Audio HIDL revision to 2.1
+- created standalone RRO for OplusDoze.
+
+
 2025.01.22
 ----------
 - updated kernel
