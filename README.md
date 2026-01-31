@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+
+2025.01.31
+----------
+- completed Dolby Atmos implementation. It is now FULLY OPERATIONAL.😊🥳🥰
+
+
 2025.01.30
 ----------
 - added missing TinyALSA library
