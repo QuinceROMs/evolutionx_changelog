@@ -3,7 +3,6 @@ Evolution X - device tree changelog
 
 2025.01.30
 ----------
-- added missing libdpps library and patched to load qcom's libtinyxml2_1.so
 - added missing TinyALSA library
 - patched audio libs to load libaudioroute-v34.so
 - set executable permissions and linked Dolby service against V33 libstagefright_foundation
