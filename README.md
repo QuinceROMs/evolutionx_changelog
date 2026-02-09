@@ -1,6 +1,15 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.02.09
+----------
+- fixed Google Hotword a.k.a OK Google 🔥
+- added missing 32-bit QCcom audio effect blobs
+- patched volume_listener to use odm/lib/hw/audio.primary.msmnile.so path instead vendor/lib/hw/audio.primary.msmnile.so
+- added missing audio backend names
+- routed listen/preproc to LSM1 and isolate ultrasound
+- added missing echo-reference speaker path.
+
 
 2025.01.31
 ----------
