@@ -1,6 +1,19 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.02.13
+----------
+- a fully functional 📷 OnePlus Camera 📷 has been added, along with, among other things:
+  - stub classes for OnePlus framework dependencies
+  - SELinux rules for OP Camera and VPP
+  - Camera JNI and native libraries (product/lib64)
+  - HIDL interface libraries for cameraMDM, engcamera, slogan,
+    cammidasservice (system/lib, system/lib64, system_ext/lib64)
+  - VPP and bokeh vendor blobs
+  - default permissions and feature XMLs
+- added vi-feedback backend mapping for speaker protection.
+
+
 2025.02.09
 ----------
 - fixed Google Hotword a.k.a OK Google 🔥
