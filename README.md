@@ -11,6 +11,7 @@ Evolution X - device tree changelog
     cammidasservice (system/lib, system/lib64, system_ext/lib64)
   - VPP and bokeh vendor blobs
   - default permissions and feature XMLs
+- imported 32-bit QCom audio effects from OnePlus 9R
 - added vi-feedback backend mapping for speaker protection.
 
 
