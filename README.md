@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.02.20
+----------
+- fixed 48MP mode
+- reverted ultrasound and vi-feedback backend names.
+
+
 2026.02.13
 ----------
 - a fully functional 📷 OnePlus Camera 📷 has been added, along with, among other things:
