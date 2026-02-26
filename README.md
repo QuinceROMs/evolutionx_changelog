@@ -10,7 +10,7 @@ Evolution X - device tree changelog
 - fixed OnePlus Camera and Gallery logspam (both are quiet now)
 - enabled Qualcomm's Assertive Display (AD4) (imported from OOS 11.0.9.1)
 - redesigned auto-brightness curve
-- added statsd daemon on zygote-start.
+- added statsd daemon on zygote-start to prevent massive logspam.
 
 
 2026.02.20
