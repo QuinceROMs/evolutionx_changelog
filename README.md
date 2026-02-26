@@ -1,6 +1,18 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.02.26
+----------
+- shipped OnePlus Gallery
+- patched Camera to fix slow-motion init error (SM8150 does not support 120Hz)
+- reduced Camera thumbnail size to prevent Gallery crash
+- fixed watermark
+- fixed OnePlus Camera and Gallery logspam (both are quiet now)
+- enabled Qualcomm's Assertive Display (AD4) (imported from OOS 11.0.9.1)
+- redesigned auto-brightness curve
+- added statsd daemon on zygote-start.
+
+
 2026.02.20
 ----------
 - fixed 48MP mode
