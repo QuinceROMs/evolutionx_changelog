@@ -1,6 +1,18 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.03.03
+----------
+- fixed NCM tethering (FINALLY!)
+- critical kernel and vendor security fixes, including several anti-exploit fixes
+  (their list is on Google Drive in the ROM directory)
+- fixed battery skipping bug in kernel (more testing needed)
+- configured SQLite to operate in MEMORY mode
+- BT.601 170M is now treated as sRGB in SurfaceFlinger (better colors in old apps)
+- added stubs and used correct SM8150 OPFeatures values and flags to reduce Gallery logspam
+- added two minor fixes related to SuSFS.
+
+
 2026.02.26
 ----------
 - shipped OnePlus Gallery
