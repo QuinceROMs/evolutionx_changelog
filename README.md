@@ -1,6 +1,28 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.03.08
+----------
+- reverted kgsl rw_semaphore conversion (caused priority inversion under GPU load)
+- reverted zram writeback and idle page tracking (caused memory pressure spikes)
+- reverted UFS BUG_ON to WARN_ON conversion (masked real hardware errors)
+- capped schedutil iowait boost to thermal limit to prevent frequency overshoot
+- reduced page_cluster from 3 to 0 for faster single-page swap-in
+- tuned vmscan swappiness, watermark scale and dirty ratios for lower kswapd overhead
+- backported NL80211_ATTR_MAX_NUM_AKM_SUITES for WPA3/SAE compatibility
+- disabled carrier state during WLAN suspend to prevent phantom disconnect events
+- cancelled pending WCD SPI clock work before suspend to avoid use-after-free
+- sepolicy: allowed vendor_init to set exported_bluetooth_prop and vendor_system_prop
+- sepolicy: allowed vendor_init to read proc_meminfo and proc_vmstat
+- sepolicy: allowed hal_wifi_default diag_device and wlan firmware access
+- sepolicy: added dontaudit for IMS and iorapd noise
+- sepolicy: allowed system_server access to battery sysfs, CachedAppOptimizer
+  cgroup, motor and ultrasound devices
+- added Thermal HAL v3 (android.hardware.thermal-service.pixel) with progressive
+  skin-therm throttling hints in powerhint.json
+- fixed lockscreen charging info display units.
+
+
 2026.03.06
 ----------
 - backported binder oneway spamming detection with logging and backtrace dump
