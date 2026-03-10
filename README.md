@@ -1,6 +1,19 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.03.10
+----------
+- reverted unstable memory management optimizations (vmscan tuning, page_cluster)
+- reverted Google Pixel 4 CPU frequency profile (capacity-dmips-mhz)
+- fixed double-tap-to-wake by enabling IRQ wake support for Synaptics S3706 touch controller
+- backported MADV_COLD and MADV_PAGEOUT reclaim logic for LMKD to actively reclaim
+  memory from cold/idle processes (completes the process_madvise syscall backport)
+- backported schedutil slower frequency ramp-down for improved battery efficiency
+- added new sensor mappings for Thermal HAL and disabled excessive thermal logging
+- sepolicy: silenced NNAPI HAL default_prop denial on user builds
+- sepolicy: fixed sensor HAL and binder denials on user builds.
+
+
 2026.03.08
 ----------
 - reverted kgsl rw_semaphore conversion (caused priority inversion under GPU load)
