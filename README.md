@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.03.14
+----------
+- comprehensive display driver fix addressing complete system freezes
+  (black screen, no touch response, only force reboot helped): hardened
+  PHY resume error handling, fixed multiple deadlock paths in CMD mode
+  (ppdone timeout, HBM with clocks off, VBIF halt stall), and enabled
+  suspend-ULPS to avoid risky full PHY power-down on every suspend cycle
+- added CVP and OmxVpp camera blobs (device and vendor, 32+64 bit).
+
+
 2026.03.10
 ----------
 - reverted unstable memory management optimizations (vmscan tuning, page_cluster)
