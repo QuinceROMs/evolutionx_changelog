@@ -1,6 +1,24 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.03.17
+----------
+- synced the kernel with current crDroid changes and updated SusFS to v2.0.0
+  with the latest upstream follow-up fixes
+- fixed battery SOC jumps so the status bar drops smoothly in visible 1% steps
+  instead of occasional 4% jumps
+- overclocked the GPU to 757 MHz across SM8150 v2 DTS variants after stability testing
+- backported the Qualcomm qseecom listener/app ioctl race fix
+- restored reserve partition ueventd rules for current OOS blobs
+- aligned OOSCam package lists with OOS 12.1 H.41, including the Telegram camera whitelist
+- refreshed `camera_helper` with expressive styling, smaller resources and updated translations
+- vendor: allowed `gettid` in `wfdhdcphalservice` seccomp policy to avoid Android 16
+  seccomp filter failures
+- hardware/oplus: refreshed translations, updated alert slider visuals, and added
+  sepolicy fixes for fingerprint vendor data creation/ioctl access plus
+  `ro.oplusupgrade.alpha.version` labeling.
+
+
 2026.03.14
 ----------
 - comprehensive display driver fix addressing complete system freezes
