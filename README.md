@@ -1,6 +1,22 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.04.04
+----------
+- reworked battery SOC smoothing again to follow stock OOS behavior more closely,
+  eliminating visible catch-up jumps and keeping the status bar drop in cleaner 1% steps
+- enabled BBRv2 with fq as the default TCP stack on SM8150
+- backported the vmscan critical-process throttle bypass so direct reclaim
+  no longer stalls system-critical tasks, including binder-spawned workers that inherit
+  a critical `oom_score_adj`
+- brought up the NXP eSE / NFC off-host stack, shipped the matching OOS eSE config
+  and added the required HAL cross-lookup SELinux rules
+- audio/Dolby: restored offload policy profiles, fixed profile-specific GEQ preset storage
+  and restored session-scoped playback effects
+- bumped vendor.oplus.hardware.subsys_interface.subsys_radio to V9
+- enabled Quick Share / Mosey.
+
+
 2026.03.17
 ----------
 - synced the kernel with current crDroid changes and updated SusFS to v2.0.0
