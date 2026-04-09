@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.04.09
+----------
+- disabled FaceDownDetector by default to reduce battery consumption in idle
+- fixed several sepolicy rules.
+
+
 2026.04.04
 ----------
 - reworked battery SOC smoothing again to follow stock OOS behavior more closely,
