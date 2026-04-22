@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.04.22
+----------
+- KeyHandler: AlertSliderPlugin: Observe layout changes
+- synced with crDroid kernel and KSU Next 3.2.0
+- backported Linux Kernel 7.0 USB and FFS fixes.
+
+
 2026.04.09
 ----------
 - disabled FaceDownDetector by default to reduce battery consumption in idle
