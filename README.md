@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.04.25
+----------
+- backported 19 kernel fixes, most of them from upstream Linux Kernel 7.0,
+  covering mm/vmscan, epoll/file lifetime handling, PM runtime accounting,
+  workqueue/rwsem fairness and USB gadget/configfs/functionfs stability
+- hardened the legacy dwc3-msm wrapper so repeated ep_queue() attempts no longer
+  reuse half-initialized requests or leak the wrapped completion callback
+- sm8150-common: updated CarrierConfig to mustang 16.CP1A.260405.005.15001963
+
+
 2026.04.22
 ----------
 - KeyHandler: AlertSliderPlugin: Observe layout changes
