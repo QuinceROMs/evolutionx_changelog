@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.04.28
+----------
+- reapplied older version of commit "nl80211/cfg80211: advertise maximum number
+  of AKM suites supported"
+- reworked thermal_info_config.json for kernel compatibility.
+
+
 2026.04.25
 ----------
 - backported 19 kernel fixes, most of them from upstream Linux Kernel 7.0,
