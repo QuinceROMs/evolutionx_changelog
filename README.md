@@ -5,7 +5,8 @@ Evolution X - device tree changelog
 ----------
 - reapplied older version of commit "nl80211/cfg80211: advertise maximum number
   of AKM suites supported"
-- reworked thermal_info_config.json for kernel compatibility.
+- reworked thermal_info_config.json for kernel compatibility
+- [WIP] another attempt to fix battery level reading jumps.
 
 
 2026.04.25
