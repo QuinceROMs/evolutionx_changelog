@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2025.05.01
+----------
+- synced with the crDroid kernel
+- added a backport of the CVE-2026-31431 (CopyFail) patch
+- exposed pa-therm1 as POWER_AMPLIFIER in Thermal HAL
+- added some sepolicy fixes.
+
+
 2026.04.28
 ----------
 - reapplied older version of commit "nl80211/cfg80211: advertise maximum number
