@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.05.06
+----------
+- sepolicy: fixed Wi-Fi tombstone access; allowed thermal HAL to report stats
+- exempted OnePlus camera service from cached app freezer
+- synced with the crDroid kernel and LOS kernel changes
+- removed OnePlus Gallery - no space on system partition after May security patches.
+
+
 2025.05.01
 ----------
 - synced with the crDroid kernel
