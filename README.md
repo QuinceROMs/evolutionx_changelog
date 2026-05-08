@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.05.08
+----------
+- removed many pre-installed Google apps, available in the Play Store, hence...
+  - ... OnePlus Gallery has been restored :)
+- backported QCA_NL80211_VENDOR_SUBCMD_USABLE_CHANNELS (198) to the SM8150 Wi-Fi kernel stack
+- changed EROFS compression from LZ4 to LZ4HC with level 12.
+
+
 2026.05.06
 ----------
 - sepolicy: fixed Wi-Fi tombstone access; allowed thermal HAL to report stats
