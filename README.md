@@ -1,6 +1,19 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.05.24
+----------
+- Mosey/Quick Share Extension:
+  - enabled runtime packet_capture_mode for Mosey monitor
+  - created radiotap0 monitor iface for Mosey daemon
+  - added monitor radiotap raw 802.11 TX
+  - added mosey_radiotap domain for radiotap0 bring-up
+  - exempted Mosey from cached app freezer
+  - added monitor-mode management frame injection
+  - added Mosey ART private commands
+- synced with the crDroid kernel and LOS kernel changes.
+
+
 2026.05.08
 ----------
 - removed many pre-installed Google apps, available in the Play Store, hence...
