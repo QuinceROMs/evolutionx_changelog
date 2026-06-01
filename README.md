@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.06.01
+----------
+- removed Quick Share Extension (Mosey) and related kernel changes. Currently,
+  full implementation of iPhone communication support is impossible due to WCN3990
+  firmware limitations (filtering foreign 802.11 frames [multicast 33:33:…] during
+  RX in STA mode and blocking TX in monitor mode).
+
+
 2026.05.24
 ----------
 - Mosey/Quick Share Extension:
