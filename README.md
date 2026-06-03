@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.06.03
+----------
+- switched from Xiaomi Dolby to Lunaris Dolby
+- synced with the crDroid kernel and LOS kernel changes.
+
+
 2026.06.01
 ----------
 - removed Quick Share Extension (Mosey) and related kernel changes. Currently,
