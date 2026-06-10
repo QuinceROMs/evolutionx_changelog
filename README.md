@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.06.10
+----------
+- re-enabled Bluetooth A2DP hardware offload
+- sepolicy: allowed vendor_ims to access Diag device
+- Lunaris Dolby: updated Polish translation
+- drastically shortened system boot time by reducing the waiting time for sensors that do not exist in the OOS 12.1 firmware (2 seconds instead of 30).
+
 2026.06.03
 ----------
 - switched from Xiaomi Dolby to Lunaris Dolby
