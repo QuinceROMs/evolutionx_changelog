@@ -1,6 +1,14 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.06.26
+----------
+- imported the DTS:X Ultra from the ZTE A2020G Pro (P855A01), based on the module
+  by Reiryuki, later modified by ShadoV
+- keep spatial audio off the built-in speaker
+- synced with the crDroid kernel/device and LOS kernel/device changes.
+
+
 2026.06.19
 ----------
 - fixed battery percentage slip
