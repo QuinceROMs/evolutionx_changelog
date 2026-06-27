@@ -1,6 +1,21 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.06.27
+----------
+- Dolby Atmos and DTS:X Ultra can now run together on the music stream, so
+  both effects are applied at once
+- expanded DTS:X Ultra headphone support from the newest ZTE/RedMagic dumps:
+  - refreshed the accessory tuning database with the RedMagic 11 Pro (NX809J)
+    set, so more headphones get their dedicated tuning profile
+  - refreshed the bundled headphone catalog from the RedMagic 11 Air (NX799J,
+    DTS:X Ultra 16.0), 491 -> 513 models - now lists e.g. Sony WH-1000XM3,
+    Bose Noise Cancelling 700, HyperX Cloud Alpha and the Asus ROG headsets
+  - patched the DtsUltra offline-database integrity check so the newer catalog
+    loads cleanly (one ZTE entry is mistyped as Standard in DTS's own data)
+- synced with the crDroid kernel and device changes.
+
+
 2026.06.26
 ----------
 - imported the DTS:X Ultra from the ZTE A2020G Pro (P855A01), based on the module
