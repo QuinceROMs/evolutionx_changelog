@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.07.02
+----------
+Initial build of Android 17!🥳😎
+
+- sudio and WFD blobs adjusted to A17
+- fixed SELinux rules
+- bumped kernel clang to r596125
+- granted lcd-backlight access for the screen-flash relabel.
+
+
 2026.06.27
 ----------
 - Dolby Atmos and DTS:X Ultra can now run together on the music stream, so
