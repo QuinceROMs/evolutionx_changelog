@@ -3,7 +3,8 @@ Evolution X - device tree changelog
 
 2027.07.07
 ----------
-- used legacy UDFPS enrollment UI
+- fixed the lack of downlink on SIM cards
+- used legacy UDFPS enrollment UI in Setup Wizard
 - defaulted long press power to the power menu
 - bump SNS registry version on user's phone
 - switched to the ShadoV's DTS:X Ultra app
