@@ -1,6 +1,18 @@
 Evolution X - device tree changelog
 ===================================
 
+2027.07.07
+----------
+- used legacy UDFPS enrollment UI
+- defaulted long press power to the power menu
+- bump SNS registry version on user's phone
+- switched to the ShadoV's DTS:X Ultra app
+- kernel:
+  - guarded PKCS#11 ENGINE path for BoringSSL
+  - msm: ADSPRPC: awake PM with a timeout
+- synced with the crDroid kernel/device and LOS kernel/device changes.
+
+
 2026.07.02
 ----------
 Initial build of Android 17!🥳😎
