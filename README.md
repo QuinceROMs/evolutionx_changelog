@@ -1,7 +1,7 @@
 Evolution X - device tree changelog
 ===================================
 
-2027.07.22
+2026.07.22
 ----------
 - dropped the secure element
 - sepolicy:
@@ -13,7 +13,7 @@ Evolution X - device tree changelog
 - synced with the crDroid kernel/device and LOS kernel/device changes.
 
 
-2027.07.07
+2026.07.07
 ----------
 - fixed the lack of downlink on SIM cards
 - used legacy UDFPS enrollment UI in Setup Wizard
