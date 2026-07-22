@@ -1,6 +1,18 @@
 Evolution X - device tree changelog
 ===================================
 
+2027.07.22
+----------
+- dropped the secure element
+- sepolicy:
+  - quiet isolated-app setattr on app data files
+  - dropped obsolete vendor poweroffalarm rules
+- disabled camera-compat orientation treatment
+- updated ICharger to V11
+- ramoops: record the kernel console
+- synced with the crDroid kernel/device and LOS kernel/device changes.
+
+
 2027.07.07
 ----------
 - fixed the lack of downlink on SIM cards
