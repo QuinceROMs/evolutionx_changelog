@@ -1,6 +1,11 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.07.27
+----------
+- fixed mounting of KernelSU Next modules.
+
+
 2026.07.22
 ----------
 - dropped the secure element
