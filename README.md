@@ -1,6 +1,19 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.08.03
+----------
+- OnePlus Camera:
+  - extended camera DSP/sysfs sepolicy rules to priv_app_36
+  - declared camera.debug.superlowlight properties in sepolicy
+  - reimplemented cameraMDM@2.0 daemon from source and dropped prebuilt and .rc files
+  - allowed priv_app_36 to read battery supply sysfs
+- dropped dead debug.c2.use_dmabufheaps prop
+- keeped DTS:X processing off the offload path (requires more testing)
+- kernel: let root tracers read ptrace_message again
+- synced with the crDroid kernel changes.
+
+
 2026.07.27
 ----------
 - fixed mounting of KernelSU Next modules.
