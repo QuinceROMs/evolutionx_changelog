@@ -1,6 +1,13 @@
 Evolution X - device tree changelog
 ===================================
 
+
+2026.08.13
+----------
+- pinned camera, mic and notification grants for OnePlus Camera
+- synced with the crDroid kernel changes.
+
+
 2026.08.03
 ----------
 - OnePlus Camera:
