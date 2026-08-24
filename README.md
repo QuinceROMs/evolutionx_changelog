@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.08.24
+----------
+- killed a useless boot hack that wiped the package cache every boot
+- debloat list synced with the new GMS
+- kernel: crash dumps are back, debugging works again.
+
 
 2026.08.13
 ----------
