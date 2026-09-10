@@ -31,7 +31,7 @@ Evolution X - device tree changelog
 - fixed Wi-Fi calling service crashes caused by missing carrier usernames or passwords
 - removed a duplicate temperature control service
 - kept storage cleanup on the maintenance method supported by the device’s kernel
-- restored native crash reports for apps and system services running without root
+- kernel: restored native crash reports for apps and system services running without root
 - kernel: improved kernel memory allocation and cleanup when reading or changing system settings
 - kernel: fixed duplicate audio controls and broken internal audio connections
 - kernel: removed audio connections for speaker hardware that is not present on the OnePlus 7
