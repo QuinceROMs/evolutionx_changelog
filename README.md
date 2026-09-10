@@ -1,6 +1,45 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.09.10
+----------
+- improved file write handling in the OnePlus Camera support service
+- fixed communication between the fingerprint reader and Android
+- prevented LiveDisplay crashes caused by invalid saved display modes
+- fixed pickup and pocket detection after service restarts on devices using OplusDoze
+- added support for one-shot pickup sensors in OplusDoze
+- fixed permissions needed to update night-mode exposure information in OnePlus Camera
+- removed outdated Wi-Fi settings that are no longer used
+- fixed an audio driver race that could repeatedly crash the sound service
+- made vendor file updates preserve existing camera dependencies, audio fixes and app settings
+- corrected the boot animation size to match the OnePlus 7 screen
+- removed obsolete display, lock screen, volume panel and webcam settings
+- connected storage maintenance to the correct internal storage health information
+- fixed the audio output path used by Android spatial audio
+- added software fallback for Bluetooth audio formats such as LHDC v5 and restored support for ASHA hearing aids
+- restored Android’s default database settings instead of forcing less reliable memory-only journaling
+- added checks and time limits to screen sampling used by automatic brightness
+- prevented stalled brightness sampling from blocking other sensor updates and added automatic reconnection after failures
+- switched lift-to-wake and ambient display gestures to the implementation built into Evolution X
+- restored Bluetooth codec preferences for the current Bluetooth system component
+- stopped the OnePlus 7 from trying to load controls for a pop-up camera it does not have
+- improved pop-up camera error handling and service cleanup on models that have a motorized camera
+- added safer automatic brightness fallbacks when factory calibration is missing or invalid
+- updated the power management configuration format while keeping the existing tuning
+- simplified memory management settings while keeping the existing mode compatible with the device’s kernel
+- disabled unsupported background tasks for moving compressed memory to storage
+- fixed Wi-Fi calling service crashes caused by missing carrier usernames or passwords
+- removed a duplicate temperature control service
+- kept storage cleanup on the maintenance method supported by the device’s kernel
+- restored native crash reports for apps and system services running without root
+- kernel: improved kernel memory allocation and cleanup when reading or changing system settings
+- kernel: fixed duplicate audio controls and broken internal audio connections
+- kernel: removed audio connections for speaker hardware that is not present on the OnePlus 7
+- kernel: fixed handling of process creation requests from newer software
+- kernel: corrected power management when shutting down the serial controller
+- kernel: restored recording of the hardware event that wakes the phone from sleep.
+
+
 2026.08.24
 ----------
 - killed a useless boot hack that wiped the package cache every boot
