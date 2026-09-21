@@ -1,6 +1,16 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.09.21
+----------
+- updated the Wi-Fi Display (screen casting) system components from the latest available dump
+- dropped the manual fastbootd enablement - it is now on by default
+- removed the leftover Mosey (Quick Share Extension) app
+- added a minimal panel setup tool so the touchscreen works in recovery
+- kernel: stopped the Wi-Fi driver from sending host-only operations to the firmware
+- kernel: fixed suspend time accounting that could report absurd sleep durations after an aborted suspend.
+
+
 2026.09.10
 ----------
 - improved file write handling in the OnePlus Camera support service
