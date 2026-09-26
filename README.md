@@ -1,6 +1,24 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.09.26
+----------
+- dolby: updated Lunaris Dolby - AutoEQ headphone correction profiles, per-band fine tuner in the equalizer, redesigned main card banner etc.
+- dolby: switched the spatializer effect to Dolby swspatializer
+- guacamoleb: lifted the Now Playing pill above the UDFPS
+- powerhint: added DISPLAY_INACTIVE profile - caps the CPU clusters and GPU and shortens the GPU idle timer while the screen is off (including AOD)
+- display: allowed idle fallback to GPU composition
+- silenced wise_light sensor log spam
+- fixed memory pinning of SystemUI (SystemUIGoogle)
+- WebView is now pinned in memory
+- Bluetooth: enabled auto-connect for profiles
+- init: persistent rotating logs (50 MB) are captured from boot into /sdcard/hwlog - pull them with any file manager after a hang or crash
+- kernel panic now reboots to recovery instead of removed duplicate time_daemon service definition
+- kernel: Wi-Fi GTK offload is now bypassed for all authentication types
+- kernel: Wi-Fi idle trigger monitor is now gated on firmware idle roaming
+- kernel: updated KernelSU Next to v3.4.0.
+
+
 2026.09.21
 ----------
 - updated the Wi-Fi Display (screen casting) system components from the latest available dump
