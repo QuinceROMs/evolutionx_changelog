@@ -13,7 +13,8 @@ Evolution X - device tree changelog
 - WebView is now pinned in memory
 - Bluetooth: enabled auto-connect for profiles
 - init: persistent rotating logs (50 MB) are captured from boot into /sdcard/hwlog - pull them with any file manager after a hang or crash
-- kernel panic now reboots to recovery instead of removed duplicate time_daemon service definition
+- kernel panic now reboots to recovery instead of bootloader
+- removed duplicate time_daemon service definition
 - kernel: Wi-Fi GTK offload is now bypassed for all authentication types
 - kernel: Wi-Fi idle trigger monitor is now gated on firmware idle roaming
 - kernel: updated KernelSU Next to v3.4.0.
