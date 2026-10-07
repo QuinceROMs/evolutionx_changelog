@@ -1,6 +1,19 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.10.07
+----------
+- added Umbra, a completely new audio effect (sound tuning system) by ShadoV
+- replaced legacy cgroup writepid directives with explicit task profiles for the audio and sensors HALs - same placement, no more init warnings
+- hwlog now also captures the kernel log (kmsg.txt) alongside logcat, with per-device suspend progress logged before a freeze for post-mortem hang analysis
+- dropped the two OplusDoze commits (sensor state restore on service restart, one-shot pickup sensor support) as suspects in the black screen investigation
+- kernel: enabled PM sleep debug logging so suspend progress lands in kmsg
+- kernel: restored the Qualcomm memory dump v2 driver (QCOM_MEMORY_DUMP_V2)
+- kernel: dropped the two display resume/wake hardening commits as suspects in the black screen investigation
+- kernel: imported the Baseband-guard LSM to block unauthorized baseband configuration changes
+- kernel: backported per-buffer DMA-BUF sysfs statistics - dumpsys meminfo now reports real DMA-BUF usage and the libmeminfo log spam is gone.
+
+
 2026.09.26
 ----------
 - dolby: updated Lunaris Dolby - AutoEQ headphone correction profiles, per-band fine tuner in the equalizer, redesigned main card banner etc.
