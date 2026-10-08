@@ -1,6 +1,12 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.10.08
+----------
+- increased integer dose brightness
+- dropped OplusDoze footer preference referencing undefined string.
+
+
 2026.10.07
 ----------
 - added Umbra, a completely new audio effect (sound tuning system) by ShadoV
