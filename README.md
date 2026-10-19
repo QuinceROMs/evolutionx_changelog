@@ -1,6 +1,17 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.10.19
+----------
+- dropped the persistent hwlog logging - it acted as a catalyst for the black screen hang, so removing it restores stability
+- oplus-fwk: added the com.oplus.internal.reflect compatibility kit - fixes the telephony (IMS) service crashing during call handling
+- fixed sensors staying dead until reboot after a sensors HAL crash - the HAL now declares its ISensors interface and init respawns it
+- fixed several sepolicy rules
+- updated Umbra to v.91.5
+- kernel: tri_key: Guard hall IRQ enable against unbalanced enable_irq
+- kernel: updated KernelSU Next to v3.4.2 (legacy + SuSFS v2), version reporting matched to the public manager.
+
+
 2026.10.08
 ----------
 - increased integer dose brightness
