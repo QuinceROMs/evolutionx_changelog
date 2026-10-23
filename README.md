@@ -1,6 +1,27 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.10.23
+----------
+- OnePlus Camera:
+  - rebased the whole camera port onto Android 17 as one clean series, with every camera blob pinned to OxygenOS 12.1 H.41
+  - the app patches are now applied to the original, signed OnePlus Camera APK instead of a repacked one
+  - cameraMDM: deleted watermark files no longer stay allocated - the camera never closed them, so they kept hundreds of MB of storage occupied until reboot
+  - removed the world-writable permissions the stock camera service set on the watermark directory and CPU sets
+  - dropped the unused slogan and engineering camera libraries
+  - dropped a dead DSP file label and restored the LineageOS one
+- moved charging control, the Dash charging indicator and the OTG switch to the new /sys/class/oplus_chg nodes (LineageOS kernel and device change)
+- dolby: updated Lunaris Dolby - Material 3 Expressive redesign with new typography, fixed a crash at boot when the saved state could not be applied, fixed the master toggle and the Quick Settings tile getting out of sync, new and updated translations (Polish, Chinese, Persian, Vietnamese, Turkish, Indonesian, Russian)
+- updated Umbra to v0.91.17
+- alert slider: added a flashlight option
+- fixed several sepolicy denials (charger and camera HALs, Widevine)
+- kernel: fixed CVE-2026-43284 - ESP no longer decrypts in place over shared (spliced) packet data, plus related skbuff zerocopy fixes
+- kernel: fixed cgroup freezer races that could wrongly unfreeze cached apps
+- kernel: updated SuSFS to v2.3.0 (SUS_MOUNT, SUS_KSTAT and OPEN_REDIRECT fixes, including mount ID gap detection, a memory leak, a use-after-free and a deadlock) and fixed three more SuSFS bugs in inode matching and mount info output
+- kernel: KernelSU Next no longer sleeps while holding the SELinux policy lock when a module with sepolicy rules (e.g. SuSFS) is loaded - this could lock up the phone during boot
+- kernel: less charger log spam.
+
+
 2026.10.19
 ----------
 - dropped the persistent hwlog logging - it acted as a catalyst for the black screen hang, so removing it restores stability
