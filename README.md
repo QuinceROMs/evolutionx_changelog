@@ -1,6 +1,21 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.11.05
+----------
+- kernel: ported GrapheneOS kernel hardening - maximum mmap ASLR entropy (33 bits, 16 bits for 32-bit apps), randomized lower bits of brk, the argument block and the stack, 48-bit address space, alloc_size attributes for kernel allocators, a ksize() sanity check, allocator and softirq data made read-only after init, SCTP and line discipline autoloading disabled
+- kernel: fixed 30 CVEs published in October 2026 - networking (TCP, UDP, IPv4/IPv6, IPsec, netlink, packet sockets, conntrack), Wi-Fi, binder, ALSA, USB, HID and input, workqueue, fsnotify, pipes, memory management, perf and mount namespaces
+- kernel: mobile data no longer stays stalled until reboot when the modem never sends the indication that releases a held bearer (e.g. after a RAT switch) - a 5 s watchdog now restores the uplink
+- kernel: backported the upstream fdinfo access changes - system_server can read the DMA-BUF usage of apps again, so the recurring "Failed to read dmabuf fd references" errors are gone
+- OnePlus Camera: granted the SYSTEM_CAMERA permission and signed the app with the platform key
+- thumbnails are now decoded in software - the OxygenOS hardware decoders output a format the thumbnail generator cannot read, so every thumbnail waited 2 s before falling back
+- updated the Adreno SQE microcode to v2.07 from linux-firmware, the newest one published for the Adreno 630 family
+- fixed OTG detection
+- guacamoleb: auto-brightness no longer drops to minimum when the screen turns back on after a call - the light sensor under the panel is still shadowed for the first readings
+- updated Umbra to v0.94.2
+- updated translations.
+
+
 2026.10.23
 ----------
 - OnePlus Camera:
