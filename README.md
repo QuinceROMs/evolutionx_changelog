@@ -1,6 +1,22 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.11.11
+----------
+- face unlock now uses the OnePlus face HAL with the OxygenOS engine (from LineageOS) instead of Paranoid Sense
+  - the engine no longer fails to start on the 786 Adreno driver, which reports the GPU as "Adreno 650" - it now gets the real GPU model from the kernel
+  - engine initialization can be retried after an error, and the license is loaded only once per process
+  - fixed the camera preview during face enrollment
+  - malformed records or an interrupted write no longer destroy the saved face data, and the communication with the TEE is validated more strictly
+- the USB webcam mode is now enabled from the device tree instead of an Evolution X build flag, which is gone on Android 17
+- vendor.oplus.hardware.commondcs@1.0 is now built from source instead of shipped as a blob (LineageOS)
+- fixed several OnePlus HAL interface definitions - radio, IMS radio, MIDAS, pogo keyboard and performance (LineageOS)
+- alert slider: the dialog now uses the Android 17 background blur
+- updated Umbra to v0.97.11
+- kernel: fixed 20 CVEs published in September-November 2026 - networking (socket timestamps, TUN, IPsec, IPv6 temporary addresses and flow labels, ICMP rate limiting), keyrings, coredump, inotify, ALSA (USB MIDI, PCM mmap), HID (Sony, Steam, Roccat), xHCI and crafted ext4, f2fs and exFAT drives connected over USB
+- kernel: disabled the unused NTFS and eCryptfs drivers - NTFS drives are still mounted through ntfs-3g.
+
+
 2026.11.05
 ----------
 - kernel: ported GrapheneOS kernel hardening - maximum mmap ASLR entropy (33 bits, 16 bits for 32-bit apps), randomized lower bits of brk, the argument block and the stack, 48-bit address space, alloc_size attributes for kernel allocators, a ksize() sanity check, allocator and softirq data made read-only after init, SCTP and line discipline autoloading disabled
