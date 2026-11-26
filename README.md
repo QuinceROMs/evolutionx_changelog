@@ -1,6 +1,39 @@
 Evolution X - device tree changelog
 ===================================
 
+2026.11.26
+----------
+- face unlock:
+  - enrollment keeps the good frames already collected when a later frame is rejected, instead of starting over and running into the 60 s timeout
+  - a frame whose liveness check could not be run is no longer accepted
+  - a front camera taken by another app is reported as unavailable hardware instead of a timeout, and a failed face removal is reported to the framework
+  - a face is removed with the engine that enrolled it; camera frames, detector results and saved features are bounds checked
+- fingerprint: the HAL wrapper restarts together with the OnePlus HAL, and no longer crashes on a missing client callback or hangs when the UDFPS sensor is torn down
+- Dolby:
+  - app profiles: no more missed app switches, and the profile you pick yourself is no longer reverted on the next app switch
+  - device memory: USB audio has its own settings, separate from the headphone jack; moving media between outputs is followed; removing a device no longer overwrites the settings of the others; saved settings are restored even when Dolby was off
+  - tile taps are no longer lost, the settings screens refresh after a device change, and the app no longer crash-loops while audioserver restarts
+  - AutoEQ profile ids are validated before use as file names
+- doze: turning ambient display or always-on display on or off in Settings takes effect right away instead of after a reboot, and a sensor event no longer suppresses the next one
+- dropped the OplusDoze app - the pick-up gesture is already handled by SystemUI
+- alert slider: slider changes are handled off the input thread
+- touch: the HAL no longer aborts when the gesture mask cannot be read, and failed writes (gestures, glove mode, double tap to wake) are reported instead of treated as success
+- OnePlus Camera:
+  - portrait mode no longer needs a 4 KB guard after every allocation of the camera provider - a shim now pads only the ArcSoft bokeh allocations
+  - a camera hang is reported once instead of every 3 s, and the app's permissions are no longer granted to every installed app
+  - its SELinux rules now cover the platform app domain it has run in since it was signed with the platform key, so it can read the battery temperature and use the secure DSP again
+- updated Umbra to v0.98.22 and added its own spatializer - with the multichannel switch on in the app, Umbra Spatial replaces the Dolby spatializer after a reboot; the post-process switch is now followed too
+- auto-brightness: the light sensor keeps reporting when the screen capture used for its correction fails, and a slow capture no longer blocks it for up to a second
+- anti-flicker: checking the state no longer costs two failed ioctls and two kernel errors each time
+- the torch LED and ultrasound nodes are no longer world writable, and the alert slider node is read-only for system_server
+- removed configuration that had no effect (duplicated vendor properties, init entries and power hints for absent nodes, unused overlays)
+- kernel: double tap wakes the device from the always-on display again
+- kernel: fixed 9 more CVEs (f2fs, HID, xHCI, TCP), a crash with Logitech receivers behind a KVM switch and a possible hang in the TLB flush on munmap
+- kernel: alert slider driver - the calibration write is bounded and the state machine runs under the chip mutex
+- kernel: updated SuSFS to v2.4.0 - chosen apps can be hidden from the process priority syscalls, and sus paths can be limited to chosen apps
+- kernel: synced KernelSU Next with upstream.
+
+
 2026.11.11
 ----------
 - face unlock now uses the OnePlus face HAL with the OxygenOS engine (from LineageOS) instead of Paranoid Sense
